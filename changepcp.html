@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Change Your PCP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">    
+    </head>
+    <body>
+        <div id="container" class="center-h">
+            <header id="page-header" class="row rel">
+                <img src="imgs/ky_mempublic-1024.png" alt="header">
+                <nav id="header-nav" class="row white-bg">
+                    <ul class="col fs14">
+                        <li><a href="#" class="blue hide">Español</a></li>
+                        <li><a href="#" class="blue">AAA</a></li>
+                    </ul>
+                    <ul class="text-right right fs16">
+                        <li class="text-right"><a href="#" class="blue">Log in</a></li>
+                        <li><a href="#" class="hide blue blue-border-left text-right">Contact Us</a></li>
+                    </ul>
+                 </nav>
+            </header>
+            <section id="main-row" class="row">
+                <nav id="side-nav" class="col">
+                   <ul>
+                       <li><a id="sidelink1" href="#"></a><!--About Us--></li>
+                       <li><a id="sidelink2" href="#"></a><!--Benefits &amp; Services--></li>
+                       <li><a id="sidelink3" href="#"></a><!--Newsletters &amp; More--></li>
+                       <li><a id="sidelink4" href="#"></a><!--Preventive Guidelines--></li>                       
+                       <li><a id="sidelink5" href="#"></a><!--Find a Doctor--></li>
+                       <li><a id="sidelink6" href="#"></a><!--Community Resources--></li>
+                       <li><a id="sidelink7" href="#"></a><!--How To Enroll--></li>
+                   </ul> 
+                </nav>
+                <section>
+                    <section id="changepcp" class="col fs16">
+                        <header>
+                            <h1>Change your <br>Primary Care Physician (PCP)</h1>
+                        </header>
+                        <section>
+                            <form action="changepcp.html" method="get" class="rounded-lg">
+                                <div class="lime-bg row">
+                                    <p id="pcp-error" class="error-text"></p>
+                                    <div class="row mb10">
+                                        <label for="pcp-name" class="i-block mb10">I want my PCP to be: </label>
+                                        <input 
+                                        id="pcp-name"
+                                        name="pcp-name"
+                                        type="text" 
+                                        class="right"
+                                        autofocus
+                                        required
+                                        placeholder="Enter 'Rita Smith' or 'Main Street Pediatrics'">
+                                    </div>
+                                <p id="zip-error" class="error-text"></p>
+                                <div class="row text-right mb10">
+                                    <label for="distance">Search within:</label>
+                                    <div class="select-styler i-block">
+                                            <select id="distance" name="distance" class="blue">
+                                                <option value="5" class="blue">5 miles</option>
+                                                <option value="10" class="blue">10 miles</option>
+                                                <option value="15" class="blue" selected>15 miles</option>
+                                                <option value="20" class="blue">20 miles</option>
+                                            </select>
+                                        </div>
+                                        <label for="zip">of Zip Code</label>
+                                            <input 
+                                            id="zip" 
+                                            name="zip" 
+                                            type="text" 
+                                            required 
+                                            placeholder="12345">
+                                    </div>
+                                </div>
+                                <div class="magenta-bg row">
+                                    <button 
+                                    id="submit" 
+                                    type="button" 
+                                    class="magenta-bg white fs24 right">Select this PCP <span class="arrow-wht"></span>
+                                    </button>
+                                </div>
+                                <!-- the modal -->
+                                <div id="modal">
+                                    <div class="white-bg">
+                                        <h1>Please confirm:</h1>
+                                        <p id="message" class="fs14"></p>
+                                        <button id="reset" type="reset" class="i-block">Clear</button>
+                                        <button id="ok" type="submit" class="lime-bg i-block">OK</button>
+                                    </div>
+                                </div>                                
+                            </form>
+                        </section>
+                <section class="text-center">
+                    <!-- corrected minor typos -->
+                    <p class="fs20 bold"><span class="magenta">Not sure?</span> <span class="blue">Use our Find-A-Doctor Search Tool&nbsp;<span class="arrow"></span></span></p>
+                    <p class="fs14">Then fill out the form above. </p> 
+                </section>                           
+                    </section>
+                    <aside id="address" class="right">
+                        <h3 class="mb10">Your Current address:</h3>
+                        <p>123 Whatever Street<br>
+                            Whatever City, KY 23342
+                        </p>
+                        <section class="fs11">
+                        <p>Not your current address?</p>
+                        <a href="#" class="block blue">Update</a>
+                        </section>
+                    </aside>                 
+                </section>
+            </section>
+        </div>
+        <script src="js/app.js"></script>         
+    </body>
+</html>
